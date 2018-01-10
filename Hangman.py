@@ -59,14 +59,13 @@ def main():
 
     while True:
         game_completed = False
-        guessed_list = []  # clear list
+        moves_left = 7
+        guessed_list = []
 
         word = random.choice(words).lower()
         l = len(word)
-        moves_left = l
-        guessed_list = []
         list_letters = list(word)
-        print(list_letters)
+        #print(list_letters)
 
         print('Guess a ' + str(l) + ' letter word')
         for i in range(l):
